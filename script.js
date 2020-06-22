@@ -35,7 +35,7 @@ function generatePassword() {
     //what characters should be used when creating a pwd if yes, push the concatenation of that array with the other choices, like rps, 
     //only identify the wins.
     let pwdSym = confirm("Should I include SYMBOLS in your password?");
-    let pwdlower = confirm("Should I include LOWER case letters in your passord?");
+    let pwdlower = confirm("Should I include LOWER case letters in your password?");
     let pwdUpper = confirm("Should I include UPPER case Letters in your password?");
     let pwdNum = confirm("Should I include NUMBERS in your password?");
 
