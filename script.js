@@ -8,7 +8,7 @@ function generatePassword() {
     //make the option into an array otherwise, you will create a string and then you will have to use ; 
     //I don't know if it needs to be accessed globally or locally, locally seems to be more explicity , 
     //jj says explicit is better than implicit. 
-    //if this doesn't work remember jj gave you this in office hours to change strings back to arrays
+    //if this doesn't work remember jj gave you this in office hours to change strings back to arrays use this rather than the splict use concat to capture the confirms
     //let choicesArray = []
     //if 
     //(confirmLower) {
@@ -46,19 +46,19 @@ function generatePassword() {
     // per jj preclass, I need to take the confirms, and bring them together with a join && concatenation,
     ///find out how to set the condition of the array.//  MDN.  Socer football..  or Rock paper scissors the T.A. from the Czech republic of forming all wins.Saturday of last week.
 
-    //if yes/wins symbols,  concate to choices 
+    //if yes/wins symbols,  concate to choices (think of filling a hat, to pick numbers at random. this one fills the hat with symbols)
     if (pwdSym) {
         pwdchoices = pwdchoices.concat(charSym);
     }
-    //if yes/wins lower, concatenate to choices
+    //if yes/wins lower, concatenate to choices filling the hat
     if (pwdlower) {
         pwdchoices = pwdchoices.concat(charLower);
     }
-    // if yes/wins, upper, concat to choices
+    // if yes/wins, upper, concat to choices filling the hat
     if (pwdUpper) {
         pwdchoices = pwdchoices.concat(charUpper);
     }
-    //if yes/wins, Numbers, concatenate to choices
+    //if yes/wins, Numbers, concatenate to choices filling the hat
     if (pwdNum) {
         pwdchoices = pwdchoices.concat(charNum);
     }
@@ -81,7 +81,7 @@ function generatePassword() {
         // console.log(total); // 4
         // Data from: developer.mozilla.org
         // take all the choices given and pushe them together to create a pool from which to choose at random:  Video with the sliding function operation.
-        pwdinput.push(pwdchoices[Math.floor(Math.random() * pwdchoices.length)]);
+        pwdinput.push(pwdchoices[Math.floor(Math.random() * pwdchoices.length)]); // pulling from the full hat.
 
     }
 
