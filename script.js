@@ -22,7 +22,7 @@ function generatePassword() {
     let pwdchoices = [];
     //create somewhere for the user input of length of numbers.  Define them.
     let pwdinput = [];
-    //identify the array MDN 
+    //call the array MDN 
     charSym[1];
     charLower[2];
     charUpper[3];
@@ -32,7 +32,7 @@ function generatePassword() {
 
     //  Prompt for input to gather the information of how many characters is needed for the pwd
     // let numLength = prompt("How long do you want your password to be?   Please choose a NUMBER between 8 - 128")
-    // help from Zach, this forces a parameter choice within 8-128.
+    // help from Zach shone, this forces a parameter choice within 8-128.
 
     do {
         numLength = prompt("How long do you want your password to be?   Please choose a NUMBER between 8 - 128")
@@ -49,7 +49,7 @@ function generatePassword() {
     let pwdNum = confirm("Please select OK if you would like me to include NUMBERS in your password?");
 
     // per jj preclass, I need to take the confirms, and bring them together with a join && concatenation,
-    ///find out how to set the condition of the array.//  MDN.  Socer football..  or Rock paper scissors??/  The saturday Jj was gone video.
+    ///find out how to set the condition of the array.//  MDN.  Socer football..  or Rock paper scissors the T.A. from the Czech republic of forming all wins.Saturday of last week.
 
     //if yes/wins symbols,  concate to choices 
     if (pwdSym) {
@@ -76,7 +76,7 @@ function generatePassword() {
     //     strArray[i] = "";
     for (let i = 0; i < numLength; i++) {
 
-        // take all the choices given and pushe them together to crea te a pool from which to choose at random
+        // take all the choices given and pushe them together to create a pool from which to choose at random:  Video with the sliding function operation.
         pwdinput.push(pwdchoices[Math.floor(Math.random() * pwdchoices.length)]);
 
     }
