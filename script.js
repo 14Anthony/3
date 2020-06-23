@@ -14,19 +14,14 @@ function generatePassword() {
     //(confirmLower) {
     // let lowerArray = combo11.split('');
     // choicesArray.push(lowerArray);
-    let charSym = ["@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+"];
-    let charLower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-    let charUpper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-    let charNum = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+    const charSym = ["@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+"];
+    const charLower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    const charUpper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+    const charNum = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
     //create the empty buckets for the information where we combine all the choices. Define them. 
     let pwdchoices = [];
     //create somewhere for the user input of length of numbers.  Define them.
     let pwdinput = [];
-    //call the array MDN 
-    charSym[1];
-    charLower[2];
-    charUpper[3];
-    charNum[4];
 
     let numLength = "";
 
@@ -43,10 +38,10 @@ function generatePassword() {
     // Using confirm, here in place of prompts. yes or no,"ALL WE HAVE TO DO IS IDENTIFY WINS" RockPaperScissor game... 
     //what characters should be used when creating a pwd if yes, push the concatenation of that array with the other choices, like rps, 
     //only identify the wins.
-    let pwdSym = confirm("Please select OK if you would like me to include SYMBOLS in your password?");
-    let pwdlower = confirm("Please select OK if you would like me to include LOWER case letters in your password?");
-    let pwdUpper = confirm("Please select OK if you would like me to include UPPER case Letters in your password?");
-    let pwdNum = confirm("Please select OK if you would like me to include NUMBERS in your password?");
+    const pwdSym = confirm("Please select OK if you would like me to include SYMBOLS in your password?");
+    const pwdlower = confirm("Please select OK if you would like me to include LOWER case letters in your password?");
+    const pwdUpper = confirm("Please select OK if you would like me to include UPPER case Letters in your password?");
+    const pwdNum = confirm("Please select OK if you would like me to include NUMBERS in your password?");
 
     // per jj preclass, I need to take the confirms, and bring them together with a join && concatenation,
     ///find out how to set the condition of the array.//  MDN.  Socer football..  or Rock paper scissors the T.A. from the Czech republic of forming all wins.Saturday of last week.
@@ -75,7 +70,16 @@ function generatePassword() {
     // int i; // loop index    // for (i = 0; i < strArray.length; i++)
     //     strArray[i] = "";
     for (let i = 0; i < numLength; i++) {
+        // DESCRIPTION
+        // The push() method adds one or more elements to the end of an array and returns the new length of the array.
 
+        // EXAMPLE
+        // var sports = ['soccer', 'baseball'];
+        // var total = sports.push('football', 'swimming');
+
+        // console.log(sports); // ['soccer', 'baseball', 'football', 'swimming']
+        // console.log(total); // 4
+        // Data from: developer.mozilla.org
         // take all the choices given and pushe them together to create a pool from which to choose at random:  Video with the sliding function operation.
         pwdinput.push(pwdchoices[Math.floor(Math.random() * pwdchoices.length)]);
 
