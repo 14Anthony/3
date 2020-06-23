@@ -28,14 +28,17 @@ function generatePassword() {
     charUpper[3];
     charNum[4];
 
+    let numLength = "";
 
     //  Prompt for input to gather the information of how many characters is needed for the pwd
-    let numLength = prompt("How long do you want your password to be?   Please choose a NUMBER between 8 - 128");
+    // let numLength = prompt("How long do you want your password to be?   Please choose a NUMBER between 8 - 128")
+    // help from Zach, this forces a parameter choice within 8-128.
 
-    if (numLength < 8 || numLength > 128) {
-
-        Alert("refresh the page and try again bozzo");
+    do {
+        numLength = prompt("How long do you want your password to be?   Please choose a NUMBER between 8 - 128")
     }
+    while (numLength < 8 || numLength > 128);
+
 
     // Using confirm, here in place of prompts. yes or no,"ALL WE HAVE TO DO IS IDENTIFY WINS" RockPaperScissor game... 
     //what characters should be used when creating a pwd if yes, push the concatenation of that array with the other choices, like rps, 
