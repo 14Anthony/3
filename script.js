@@ -31,6 +31,12 @@ function generatePassword() {
 
     //  Prompt for input to gather the information of how many characters is needed for the pwd
     let numLength = prompt("How long do you want your password to be?   Please choose a NUMBER between 8 - 128");
+
+    if (numLength < 8 || numLength > 128) {
+
+        Alert("refresh the page and try again bozzo");
+    }
+
     // Using confirm, here in place of prompts. yes or no,"ALL WE HAVE TO DO IS IDENTIFY WINS" RockPaperScissor game... 
     //what characters should be used when creating a pwd if yes, push the concatenation of that array with the other choices, like rps, 
     //only identify the wins.
@@ -39,8 +45,7 @@ function generatePassword() {
     let pwdUpper = confirm("Please select OK if you would like me to include UPPER case Letters in your password?");
     let pwdNum = confirm("Please select OK if you would like me to include NUMBERS in your password?");
 
-
-    // per jj preclass,  I need to take the confirms, and bring them together with a join  && concatenation,  
+    // per jj preclass, I need to take the confirms, and bring them together with a join && concatenation,
     ///find out how to set the condition of the array.//  MDN.  Socer football..  or Rock paper scissors??/  The saturday Jj was gone video.
 
     //if yes/wins symbols,  concate to choices 
