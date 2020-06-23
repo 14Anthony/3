@@ -93,5 +93,5 @@ function writePassword() {
 
     passwordText.value = password;
     //alert password
-    alert(password)
+    alert(" Here is your Password" + " " + password)
 }
